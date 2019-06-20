@@ -1,0 +1,122 @@
+/* Date: 20190305 */
+/* CSS Used from: https://familysearch-org.go-vip.co/en/wp-content/themes/FamilySearch-B/style.css?m=1545327137g ; media=all */
+@media all {
+	body #fs-footer {
+		/*padding: 20px 15px;*/
+		background-color: transparent;
+		font-size: 1rem;
+		text-align: center;
+	}
+	@media screen and (min-width: 992px) {
+		body #fs-footer {
+			/*	padding: 20px 22px 20px 25px !important;*/
+			text-align: left;
+		}
+	}
+	body #fs-footer .footer-container {
+		/*max-width: 1200px !important;*/
+		/*margin: 0 auto;*/
+		position: relative;
+		display: block;
+		/*padding-left: 14px;*/
+		color: #7d7976;
+	}
+	body #fs-footer .footer-container a {
+		color: #333331 !important;
+	}
+	body #fs-footer .footer-container .copyright-notice .service-by-link a {
+		white-space: nowrap;
+	}
+	body #fs-footer .footer-container .copyright-notice,
+	body #fs-footer .footer-container .copyright-notice * {
+		/*line-height: 1.33;*/
+		font-size: 0.75rem;
+	}
+	@media screen and (min-width: 992px) {
+		body #fs-footer .footer-container {
+			/*	max-height: 73px;*/
+			/*margin-bottom: 7px;*/
+		}
+		body #fs-footer .footer-container .footer-nav {
+			/*height: 22.75px;*/
+		}
+		body #fs-footer .footer-container .footer-nav {
+			/*	line-height: 22.75px;*/
+		}
+		body #fs-footer .footer-container .footer-nav,
+		body #fs-footer .footer-container .copyright-notice {
+			/*	width: auto;
+			margin-right: 170px;*/
+		}
+	}
+	/* end min-width: 992px */
+	body #fs-footer .footer-container .footer-nav {
+		margin-bottom: 1.25rem;
+	}
+	body #fs-footer .footer-container .footer-nav .menu-footer-menu-container,
+	body #fs-footer .footer-container .footer-nav .menu-footer-menu-container ul.menu,
+	body #fs-footer .footer-container .footer-nav span.menu-item,
+	body #fs-footer .footer-container .footer-nav #menu-footer-menu {
+		display: inline;
+	}
+	body #fs-footer .footer-container .footer-nav #menu-footer-menu {
+		padding: 0;
+	}
+	body #fs-footer .footer-container .footer-nav span.menu-item {
+		font-family: "Verdana", sans-serif;
+		/*line-height: 23px;*/
+		color: #333331;
+	}
+	body #fs-footer .footer-container .footer-nav .menu-item {
+		display: inline-block;
+		margin-right: 2rem;
+		font-size: 0.75rem;
+	}
+	body #fs-footer .footer-container .footer-nav .menu-item a {
+		font-size: inherit;
+	}
+/*	body #fs-footer .footer-container .church-logo-container {
+		margin-right: 0.25rem;
+		position: absolute;
+		right: 2.5rem;
+		top: 0;
+		bottom: 0;
+		width: 137px;
+		display: flex;
+	}
+*/
+/*	@media screen and (min-width: 992px) {
+		body #fs-footer .footer-container .church-logo-container {
+			display: inline;
+			/*	right: 0px;*/
+			/*position: relative;
+			float: right;
+		}
+*/
+	}
+/*		body #fs-footer .footer-container .church-logo-container a {
+		width: 100%;
+		height: 100%;
+		margin-top: -1.625rem;
+		margin-right: 3.7rem;
+		position: absolute;
+		top: 50%;
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding-bottom: 2rem!important;
+	}
+*/
+	@media screen and (max-width: 991px) {
+		body #fs-footer .footer-container span.church-logo-container {
+			text-align:center;
+		}
+	}
+	@media screen and (min-width: 992px) {
+		body #fs-footer .footer-container span.church-logo-container {
+			float:right;
+			position:relative;
+			bottom:80px;
+			}
+	}
+}  	/* end media all */

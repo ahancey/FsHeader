@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Greg Rundlett"
+		]
+	},
+	"fsheader-desc": "This extension injects a masthead at the top of the page"
+}

@@ -1,0 +1,625 @@
+/*<style>*/
+/* Begin Common.css */
+/* CSS placed here, in Common.com, will be applied to all skins */
+
+/* the following will stop the search from disappearing under the header in the mobile view */
+/* 20190424 removed
+.overlay-enabled .overlay,
+.overlay-enabled #mw-mf-page-center {
+    position: relative!important;
+}*/
+
+.overlay-header-container.position-fixed,
+.overlay-footer-container.position-fixed {
+    padding-top: 73px;
+}
+
+/* Remove the blue box-shadow when hovering over header items, which is
+set by the skin Minerva */
+nav ul li a:hover {
+    box-shadow: unset!important;
+}
+
+#menu-header-links-bottom.menu {
+    list-style: none;}
+
+/*#mw-head {
+    top:80px !important;
+}*/
+
+/* the following reduces the spacing between footer lines */
+#footer ul li {
+	padding-bottom: 0!important;
+}
+
+/* move the search words up into the box...the search box in the upper right hand corner. */
+/*#simpleSearch #searchInput {
+    padding: 0.2em 0 0.5em 0.2em!important;
+}*/
+
+/* get rid of 'language' at the top of the screen, to the left of username */
+#pt-uls a.uls-trigger {
+	display: none;}
+/******************* Begin 'Regular' CSS **************************************/
+
+#wikiEditor-ui-toolbar { height: 32px; } /* min-content works in chrome not ff */
+
+/* The following classes are used for the creation
+of the flexbox on the main page of the wiki */
+.row-1 {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  background-color:WhiteSmoke;
+  border:10px solid lightgray;
+  border-radius: 5px;
+  max-width:1500px;
+}
+
+/* Create two columns that sits next to each other, column-2 contains the map */
+.column-1 {
+  flex: 30%;
+  max-width: 100%;
+  padding-bottom:30px;
+}
+
+.column-2 {
+  flex: 70%;
+  max-width:70%;
+}
+.column-1 img,
+.column-2 img {
+  vertical-align: right;
+}
+
+/* Responsive layout - makes a single column */
+@media (max-width: 600px) {
+  .column-1 {
+    flex: 100%;
+    max-width: 100%;
+    justify-content: center;
+    vertical-align:top;
+  }
+  .column-2 {
+    flex: 100%;
+    max-width: 100%;
+    vertical-align:middle;
+  }
+}
+/* end main page flexbox */
+
+/* The following definition is needed for collapsible menu items */
+
+.mw-customtoggle, .mw-collapsible-toggle {
+        background: none !important;
+	border: none !important;
+	font-size: 1rem !important;
+        line-height: 1rem !important;
+	font-family: Helvetica, Verdana, san-serif !important;
+	color: #262626 !important;
+        padding: 0px !important;
+	}
+
+
+/*************** end downshifting code ****************/
+
+/*  Fix selection box size in page tabs ( Read, Edit, View History, etc.) */
+.vectorTabs li a {
+    height: inherit !important;
+    padding-bottom: 1rem;
+}
+/*  fix clickable box around the 'more' tab at the top of the page. */
+.vectorMenu #p-cactions{
+        margin-top: 0.5rem;
+}
+
+/* adding bullets to lists */
+/* 20190423 - moved to header.css
+.mw-body-content #mw-content-text .mw-parser-output ul li {
+  list-style-type:disc;
+  /*color: #00528C;*/ /* 20190322 - adding color instead of using an image for the bullet */
+  /* removing image and replacing with the correct color */
+  /*list-style-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A);*/
+/*}*/
+
+/* remove bullets from table of contents */
+.mw-content-ltr .toc ul li, .mw-content-rtl .mw-content-ltr .toc ul li {
+    text-align: left;
+    list-style-type: none!important;
+    list-style-image: none!important;
+}
+/* the code below fixes tabs that need to shift down due to header */
+#mw-head #left-navigation,
+#mw-head #right-navigation{
+    margin-top: 2.1rem;
+}
+/* the following are added to undo the settings that FS*.css creates when the FS header and footer is added to the page. */
+/*html,body { /* 20190324 - moved to header.css */
+ /*  font-size: 1rem !important;
+   line-height: 1.6rem;
+   font-family: Helvetica, Verdana, san-serif;
+   color:#262626;
+}*/
+
+/* 20190324 - moved the fonts to header.css */
+/*
+h1, h2 {
+   font-family: 'Pridi', serif;
+   color: #252525;
+   line-height: 1.3;
+   border-bottom: 1px solid #aaa;
+}
+
+
+h3, h4, h5, h6 {
+   font-family: Helvetica, "Proxima Nova Light", serif;
+   border-bottom: none;
+   color: #252525;
+}
+
+.mw-body h1{
+    font-family: 'Pridi', serif;
+    font-size: 1.6rem;
+    color: #252525;
+}
+
+.mw-body h2 {
+    font-family: 'Pridi', serif;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    color: #080908;
+}
+
+.mw-body h3 {
+   font-family: Helvetica,"Proxima Nova Bold",serif;
+   font-weight: bold;
+   font-size: 1.2rem;
+   color: #080908;
+}
+
+.mw-body h4{
+    font-family: Helvetica,"Proxima Nova Bold",serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #252525;
+}
+
+ .mw-body h5{
+   font-family: Helvetica,"Proxima Nova Light", serif;
+   font-size: 1.2rem;
+   font-weight: normal !important;
+}
+ .mw-body h6{
+   font-family: Helvetica,"Proxima Nova Light Italics";
+   font-size: 1.1em !important;
+   font-weight: normal !important;
+   font-style: italic;
+}
+*/
+/* 20190324 - moved <p>, <ul> <li>, <ol><li> over to header.css */
+/*.mw-body p, .mw-body-content p, p {
+   line-height: 1.5em;
+  /* position: relative;*/
+ /*  font-family: Helvetica, Verdana, "Proxima Nova Light",serif;
+   font-size: 0.875rem;
+   color: #262626;
+}
+.mw-body ul li, .mw-body-content ul li {
+  line-height: 1.5em;
+  /* position: relative;*/
+/*   font-family: Helvetica, Verdana, "Proxima Nova Light",serif;
+   font-size: inherit;
+   color: #262626;
+}
+
+
+ul li{
+    line-height: 1.25rem;
+   font-family: Helvetica,"Proxima Nova Light",serif;
+   font-size: 0.8rem;
+   color: #262626;
+}
+ol li{
+line-height: 1.25rem;
+}
+*/
+
+div.vectorTabs li a {  /* text size in tabs at top of every page. */
+    font-size: inherit;
+}
+
+/* MORE tab at top of page -- removed 20140425 */
+/*div.vectorMenu h3 span {
+    display: block;
+    font-size: 0.8rem;
+    padding-left: 0.7em;
+    /*padding-top: 8px;   */
+ /*   margin-right: 25px;*/  /* 20190325 - MORE tab moved */
+/*    font-weight: normal;
+    color: #4d4d4d;
+}
+*/
+
+div#mw-panel div.portal {
+     margin: 0;
+}
+
+div#mw-panel div.portal div.body ul li a {
+    color: #0060d7;
+}
+div#mw-panel div.portal h3 {
+font-family: Helvetica,Verdana, san-serif;
+}
+
+.toctext{
+    line-height: 1.125rem;
+}
+label {
+   font-size: 0.875em !important;
+   font-weight: normal;
+}
+
+#content label {
+    color: #252525;
+}
+
+select {
+    border-color: rgb(169, 169, 169);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 1rem;
+    font-family: inherit;
+    height: 25px;
+    width: auto;
+    padding: 2px 6px 3px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+input[type=number], input[type=email],
+input[type=url], input[type=search]{height: 2.5em;
+  padding: 0.1em;
+  padding-left: 1em;
+  padding-right: 1em;}
+input[type=tel], input[type=color],
+input[type=password], input[type=datetime],
+input[type=datetime-local], input[type=date],
+input[type=month], input[type=time],
+input[type=week	], input[type=text] {
+    font: 13.3333px Arial;
+    font-size: .875em;
+    width:auto;
+    border-image: initial;
+    color: #252525;
+    box-shadow: none;
+    padding: 1.185em;
+    height: 2.275em;
+    line-height: 1.275;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+}
+
+[class^="mw-htmlform-field"] label {
+    color: inherit;
+    display: inline;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+/*    margin-bottom: inherit;*/
+    cursor: initial;
+}
+
+
+/*************** end FS.css fix *****************/
+
+/* Entries to counter wiki.css code that is disrupting the ability of text to flow */
+
+#mainContent p {
+ clear: none;
+}
+
+#contentSub {
+ display: block;
+ font-size: 84%;
+ line-height: 1.2em;
+ margin: 0 0 1.4em 1em;
+ color: #7D7D7D;
+ width: auto;
+}
+
+dd {
+ margin-bottom: 0.5em;
+}
+
+/* Entries to counter wiki.css code for TOC */
+#toc {
+ width: auto;
+}
+
+#toc ul {
+ margin-top: 0;
+}
+
+#toc ul {
+ margin-left: 1em;
+}
+
+/* images */
+div.floatright, table.floatright {
+ clear: right;
+ float: right;
+ position: relative;
+ margin: 0 0 .5em .5em;
+ border: 0;
+}
+
+div.floatleft, table.floatleft {
+ float: left;
+ clear: left;
+ position: relative;
+ margin: 0 .5em .5em 0;
+ border: 0;
+}
+
+/* this can be used to switch off special external link styling */
+plainlinks a {
+ background: none !important;
+ padding: 0 !important;
+}
+
+
+/* prettytable class for skinning normal tables
+ */
+table.prettytable{
+	margin: 1em 1em 1em 0;
+	background: #f9f9f9;
+	border: 1px #aaa solid;
+	border-collapse: collapse;
+	color: black;
+	width: 100%;
+}
+.prettytable th, .prettytable td {
+	border: 1px #aaa solid;
+	padding: 0.2em;
+}
+.prettytable th {
+	background: #f2f2f2;
+	text-align: center;
+}
+.prettytable caption {
+	font-weight: bold;
+}
+
+/* For linked citation numbers and document IDs, where
+   the number need not be shown on a screen or a handheld,
+   but should be included in the printed version */
+@media screen and (min-width:480px) { /* 20190324 - changed this from 'handheld' since handheld is not supported anymore */
+    .citation *.printonly {
+        display: none;
+    }
+}
+
+/* Styling for url. Breaks long urls, etc., rather than overflowing box */
+.url {
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+		-epub-word-break: break-all;
+	   word-break: break-all;
+
+        /* Non standard for webkit  */
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+    -epub-hyphens: auto;
+
+    hyphens: auto;
+}
+
+/* Style for horizontal lists (separator following item).
+   IE8-specific classes are assigned in [[MediaWiki:Common.js/IEFixes.js]].
+   @source mediawiki.org/wiki/Snippets/Horizontal_lists
+   @revision 5 (2014-02-24)
+   @author [[User:Edokter]]
+ */
+.hlist dl,
+.hlist ol,
+.hlist ul {
+    margin: 0;
+    padding: 0;
+}
+/* Display list items inline */
+.hlist dd,
+.hlist dt,
+.hlist li {
+ /*   margin: 0;*/
+    display: inline;
+}
+/* Display nested lists inline */
+.hlist dl dl, .hlist dl ol, .hlist dl ul,
+.hlist ol dl, .hlist ol ol, .hlist ol ul,
+.hlist ul dl, .hlist ul ol, .hlist ul ul {
+    display: inline;
+}
+/* Generate interpuncts */
+.hlist dt:after {
+    content: ": ";
+}
+.hlist dd:after,
+.hlist li:after {
+    content: " . ";
+    font-weight: bold;
+}
+.hlist dd:last-child:after,
+.hlist dt:last-child:after,
+.hlist li:last-child:after {
+    content: none;
+}
+/* For IE8 */
+.hlist dd.hlist-last-child:after,
+.hlist dt.hlist-last-child:after,
+.hlist li.hlist-last-child:after {
+    content: none;
+}
+/* Add parentheses around nested lists */
+.hlist dd dd:first-child:before, .hlist dd dt:first-child:before, .hlist dd li:first-child:before,
+.hlist dt dd:first-child:before, .hlist dt dt:first-child:before, .hlist dt li:first-child:before,
+.hlist li dd:first-child:before, .hlist li dt:first-child:before, .hlist li li:first-child:before {
+    content: " (";
+    font-weight: normal;
+}
+.hlist dd dd:last-child:after, .hlist dd dt:last-child:after, .hlist dd li:last-child:after,
+.hlist dt dd:last-child:after, .hlist dt dt:last-child:after, .hlist dt li:last-child:after,
+.hlist li dd:last-child:after, .hlist li dt:last-child:after, .hlist li li:last-child:after {
+    content: ") ";
+    font-weight: normal;
+}
+/* For IE8 */
+.hlist dd dd.hlist-last-child:after, .hlist dd dt.hlist-last-child:after, .hlist dd li.hlist-last-child:after,
+.hlist dt dd.hlist-last-child:after, .hlist dt dt.hlist-last-child:after, .hlist dt li.hlist-last-child:after,
+.hlist li dd.hlist-last-child:after, .hlist li dt.hlist-last-child:after, .hlist li li.hlist-last-child:after {
+    content: ") ";
+    font-weight: normal;
+}
+/* Put ordinals in front of ordered list items */
+.hlist ol {
+    counter-reset: listitem;
+}
+.hlist ol > li {
+    counter-increment: listitem;
+}
+.hlist ol > li:before {
+    content: " " counter(listitem) " ";
+    white-space: nowrap;
+}
+.hlist dd ol > li:first-child:before,
+.hlist dt ol > li:first-child:before,
+.hlist li ol > li:first-child:before {
+    content: " (" counter(listitem) " ";
+}
+
+/* Unbulleted lists */
+.plainlist ul {
+    line-height: inherit;
+    list-style: none none;
+    margin: 0;
+}
+.plainlist ul li {
+    margin-bottom: 0;
+}
+/* Commenting out because no longer using injection header - 20190201 - Amie */
+/* Header Footer Code */
+/*header {
+    height: 80px;
+    display: block;
+}*/
+header >.global-pri-nav-container > h1 {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+/*#mw-navigation #mw-head { /* 20190324 - removed to reduce the number of times top is defined */
+/*    top: 80px !important;  */           /* change this to reflect the FamilySearch header height +3px */
+/*    z-index: 0 !important;   /* fixes see-through dropdown menus */
+/*}*/
+
+div#mw-navigation #pt-logout,
+div#mw-navigation #pt-anonlogin,
+
+div#mw-navigation #p-logo
+{
+    display: none;
+}
+#mw-navigation #mw-panel.collapsible-nav .portal.first.persistent {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#mw-navigation #mw-panel.collapsible-nav .portal.first.persistent h3 {
+    display: block;
+    font-size: 1em;
+}
+#mw-panel #p-logo + .portal h3{
+    display:block!important;
+}
+#mw-navigation #mw-panel {
+    top: 80px;
+    z-index: 1;
+}
+footer#global-engage-footer {
+    background: #f6f6f6;
+}
+.templeMember #global-engage-header ul.main-nav li.nav-temple-link .templeInfoChecked .nav-item.temple {
+    display: block !important;
+}
+
+#wrapper.inj-wrapper {
+    min-height: inherit;
+    width: 100%;
+}
+/* the following fixes an overlap in the searchbox with the hamburger menu - 20190312 */
+/* removing the next two definitions - I think putting Common.css in the backend has corrected
+the issue, and now this code is breaking it. */
+/*.oo-ui-textInputWidget.oo-ui-iconElement input,
+.oo-ui-textInputWidget.oo-ui-iconElement textarea {
+    padding-left: 2.64285714em!important;
+}
+input[type="text"]:not(.et_pb_s) {
+    padding:0!important;}
+
+
+
+/***  This code fixes the searchbox in Firefox ***/
+#bodySearchInputHomePageSearchBox {
+  height: 2.5em;
+  padding: 0.1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* tooltip popup box */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #85B807;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom:100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #85B807 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/* on smaller window size, remove border of tables in order to clean up the look of the table.*/
+ /* 20190324 - moved to header.css */
+/*@media (min-width:480px) and (max-width: 720px) {
+    .content table {
+        border: unset!important;
+        }
+    }
+    */
+
+/* end tooltip */
+/* end Common.css */
+
+/*</style*/

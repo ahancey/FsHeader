@@ -1,0 +1,1348 @@
+/*<style type="text/css">*/
+
+/* 20190308 - removed normalize.css due to conflicts occurring in wiki */
+/* 20190324 - added generic content from Common.css */
+
+
+/* this is the start of header.css */
+body {
+	margin:0;
+}
+html,body {
+	/*font-size: 16px !important;*/
+	line-height: 1.6rem;
+	font-family: Helvetica, Verdana, san-serif;
+	color:#262626;
+ }
+
+ h1, h2 {
+	font-family: Helvetica, Verdana, serif!important;
+	color: #252525;
+	line-height: 1.3;
+	border-bottom: 1px solid #aaa;
+ }
+
+
+ h3, h4, h5, h6 {
+	font-family: Helvetica, "Proxima Nova Light", serif;
+	border-bottom: none;
+	color: #252525;
+ }
+
+ .mw-body {
+ 	margin-top: 76px;
+ }
+ .mw-body h1{
+	 /*font-family: Helvetica, Verdana, serif!important;*/
+	 font-family: Helvetica,Verdana,sans;
+	 font-size: 1.6rem;
+	 color: #252525;
+ }
+
+ .mw-body h2 {
+	/* font-family: 'Pridi', serif!important;*/
+	 font-family: Helvetica,Verdana,sans;
+	 font-size: 1.4rem;
+	 line-height: 1.3;
+	 color: #080908;
+ }
+
+ .mw-body h3 {
+	font-family: Helvetica,"Proxima Nova Bold",serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #080908;
+ }
+
+ .mw-body h4{
+	 font-family: Helvetica,"Proxima Nova Bold",serif;
+	 font-size: 1.2rem;
+	 font-weight: bold;
+	 color: #252525;
+ }
+
+  .mw-body h5{
+	font-family: Helvetica,"Proxima Nova Light", serif;
+	font-size: 1.2rem;
+	font-weight: normal !important;
+ }
+  .mw-body h6{
+	font-family: Helvetica,"Proxima Nova Light Italics";
+	font-size: 1.1em !important;
+	font-weight: normal !important;
+	font-style: italic;
+ }
+
+ /* 20190324 - <p>, <ul><li> and <ol><li> moved over from common.css */
+ .mw-body p, .mw-body-content p, p {
+	line-height: 1.5em;
+   /* position: relative;*/
+	font-family: Helvetica, Verdana, "Proxima Nova Light",serif;
+	font-size: 0.875rem;
+	color: #262626;
+ }
+ .mw-body ul li, .mw-body-content ul li {
+   line-height: 1.5em;
+   /* position: relative;*/
+	font-family: Helvetica, Verdana, "Proxima Nova Light",serif;
+	font-size: inherit;
+	color: #262626;
+ }
+ /* 20190423 - moved from Common.css */
+ .mw-body-content #mw-content-text .mw-parser-output ul li {
+   list-style-type:disc;
+}
+
+ ul li{
+	 line-height: 1.25rem;
+	font-family: Helvetica,"Proxima Nova Light",serif;
+	font-size: 0.8rem;
+	color: #262626;
+ }
+ ol li{
+ line-height: 1.25rem;
+ }
+
+/* Header CSS */
+header#main-header * {
+   font-family:Verdana!important;
+}
+
+#top-menu,
+body {
+	right:0;
+	transition: all 0.25s ease-in-out !important;
+}
+
+/*! CSS Used from: https://familysearch-org.go-vip.co/en/_static/??-eJx9T9sKwjAM/SFr2NjEF/FbujbMbGlXmk7p3xtExgT18XDu8EiGouPVo4ATAU9SYODFzYZpyDZXkFIZj4HiUQUHUIdbYsFYIKwm8TpSFJiwJOtmCItfWbMKMXozWmbUiD9oC91mTAIBPVlkDK+WHUhsK2bDOFpXPzb9tCu3x1+PlJtyAoOVGfOddJhp379Veg2Xpu/69tR1zfkJoYtyNQ== ; media=all */
+@media all{
+
+	/* when in mobile view, keep the
+	search box from disappearing under the header */
+	.clearfix:after .overlay,
+	.overlay-enabled #mw-mf-page-center {
+		position:relative;
+	}
+	/* move the search words up into the box...the search box in the upper right hand corner. */
+	#simpleSearch #searchInput {
+    	padding: 0.2em 0 0.5em 0.2em!important;
+	}
+	/* when in mobile view, stop skin Minerva from defining a small grey line above
+	the header list items.*/
+	nav ul li {
+		border-top:unset !important;
+	}
+
+	ul{list-style:none!important;}
+
+
+	#content a:visited,
+	#content a.external:visited {
+		color: #0b0080;
+	}
+	#content a:hover{
+		text-decoration:underline;
+	}
+	#content a:active{
+		color:#FAA700;
+	}
+	#content a:focus{
+		outline:1px dotted #333;
+	 }
+
+   img,
+   li,
+   ul,
+   form,
+   label{
+	   border:0;
+	   font-family:inherit;
+	   font-size:100%;
+	   font-style:normal;
+	   font-weight:400;
+	   line-height:1.5em; /* changed 20190321 */
+	   margin:0;
+	   padding:0;
+	}
+
+   *{
+	   -webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+   img{
+	   height:auto;
+	   max-width:100%;
+	}
+   ::selection{
+	   background:#444;
+	   color:#fff;
+	}
+   ::-webkit-input-placeholder,
+   :-moz-placeholder,
+   ::-moz-placeholder,
+   :-ms-input-placeholder{
+	   color:#999;
+	}
+   a{
+	   -moz-transition:color .1s ease-in-out,
+	   background-color .1s ease-in-out;
+	   -ms-transition:color .1s ease-in-out,
+	   background-color .1s ease-in-out;
+	   -o-transition:color .1s ease-in-out,
+	   background-color .1s ease-in-out;
+	   -webkit-transition:color .1s ease-in-out,
+	   background-color .1s ease-in-out;
+	   transition:color .1s ease-in-out,
+	   background-color .1s ease-in-out;
+	}
+   .screen-reader-text{
+	   clip:rect(1px,1px,1px,1px);
+		position:absolute;
+	}
+   .screen-reader-text:focus{
+	   background-color:#f1f1f1;
+	   clip:auto;
+	   color:#21759b;
+	   display:block;
+	   font-size:14px;
+	   font-weight:700;
+	   height:auto;
+	   left:5px;
+	   line-height:normal;
+	   padding:15px 23px 14px;
+	   position:absolute;
+	   text-decoration:none;
+	   text-transform:none;
+	   top:5px;
+	   width:auto;
+	   z-index:100000;
+	}
+   @media print{
+	   form,input{display:none!important;}
+
+   }
+
+	/* 20190423 - remove background image on MORE tab */
+   #mw-head .vectorMenu h3 {
+       background-image: unset!important;
+   }
+/*! CSS Used from: https://familysearch-org.go-vip.co/en/wp-content/themes/FamilySearch-B/style.css?m=1545327137g ; media=all */
+
+	form input{
+	   border-radius:4px;
+	   background-color:#fff;
+	   border:2px solid;
+	   height:auto;
+	   line-height:normal;
+   }
+
+   input[type=search],
+   input[type=text],
+   input[type=submit]{
+	   -moz-appearance:none;
+	   -webkit-appearance:none;
+	}
+
+   input[type="text"]:not(.et_pb_s){
+	   background-color:#fff!important;
+	   border:1px solid #c8c8c8!important;
+	   -webkit-box-shadow:inset 0 3px 0 rgba(0, 0, 0, 0.05)!important;
+	   -moz-box-shadow:inset 0 3px 0 rgba(0, 0, 0, 0.05)!important;
+	   box-shadow:inset 0 3px 0 rgba(0, 0, 0, 0.05)!important;
+	   /*padding:0.429rem 0.714rem!important;*/
+   }
+
+   input[type="text"]:not(.et_pb_s):focus,
+   input[type="text"]:not(.et_pb_s):active{
+	   border-color:#333331!important;
+   }
+
+   @media screen and (max-width: 991px) and (-ms-high-contrast: none),
+   (-ms-high-contrast: active){
+	   #top-menu{
+		   justify-content:space-between;
+		   padding:0 5%;
+	   }
+   }
+   .clearfix:after{
+	   content:"";
+	   display:table;
+	   clear:both;
+   }
+
+   #top-menu > .icon-tree > a:before{
+	   display:block;
+	   background-size:contain;
+	   background-repeat:no-repeat;
+	   background-position:center;
+	   margin:0 auto;
+	   width:28px;
+	   height:28px;
+	   content:'';
+	   background-image: url("/wiki/public_html/img/tree.svg");
+   }
+
+   @media screen and (min-width: 992px){
+	#top-menu > .icon-tree > a:before{
+		display:none;
+	}
+}
+   #top-menu > .icon-search > a:before{
+	   display:block;
+	   background-size:contain;
+	   background-repeat:no-repeat;
+	   background-position:center;
+	   margin:0 auto;
+	   width:28px;
+	   height:28px;
+	   content:'';
+	   background-image:url("/wiki/public_html/img/search.svg");
+   }
+
+   @media screen and (min-width: 992px){
+	   #top-menu > .icon-search > a:before{
+		   display:none;
+	   }
+   }
+   #top-menu > .icon-memories > a:before{
+	   display:block;
+	   background-size:contain;
+	   background-repeat:no-repeat;
+	   background-position:center;
+	   margin:0 auto;
+	   width:28px;
+	   height:28px;
+	   content:'';
+	   background-image:url("/wiki/public_html/img/memories.svg");
+   }
+
+   @media screen and (min-width: 992px){
+	   #top-menu > .icon-memories > a:before{
+		   display:none;
+	   }
+   }
+
+   #top-menu > .icon-indexing > a:before{
+	   display:block;
+	   background-size:contain;
+	   background-repeat:no-repeat;
+	   background-position:center;
+	   margin:0 auto;
+	   width:28px;
+	   height:28px;content:'';
+	   background-image:url("/wiki/public_html/img/indexing.svg");
+   }
+
+   @media screen and (min-width: 992px){
+	   #top-menu > .icon-indexing > a:before{
+		   display:none;
+	   }
+   }
+
+   #top-menu > .icon-temple > a:before{
+   	display:block;
+   	background-size:contain;
+   	background-repeat:no-repeat;
+   	background-position:center;
+   	margin:0 auto;
+   	width:28px;
+   	height:28px;content:'';
+   	background-image:url("/wiki/public_html/img/temple.svg");
+   }
+
+   @media screen and (min-width: 992px){
+   	#top-menu > .icon-temple > a:before{
+   		display:none;
+   	}
+   }
+   @media screen and (min-width: 768px){
+	   body #main-header{
+		    height:73px!important;
+	   }
+   }
+
+   @media screen and (min-width: 992px){
+	   body #main-header{
+		    height:77px!important;
+	   }
+   }
+
+   ul#top-menu{
+	   max-height:56px!important;
+   }
+
+   .mobile_nav span.mobile_menu_bar_toggle{
+	   line-height:16px;
+	   padding:5px 9px;
+	   font-size:14px;
+   }
+
+   @media screen and (min-width: 992px){
+	   .mobile_nav span.mobile_menu_bar_toggle{
+		   font-size:16px;
+	   }
+   }
+
+   .mobile_nav span.mobile_menu_bar_toggle::before{
+	   height:28px!important;
+	   line-height:28px!important;
+   }
+
+   .mobile_nav ul#top-menu{
+	   max-height:unset!important;
+	   width:100%;
+	   padding:22px;
+	   background-color:#fff;
+	   margin-top:10px;
+	   -webkit-box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.35);
+	   -moz-box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.35);
+	   box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.35);
+	   border:1px solid #cdcdcd;
+   }
+
+   .mobile_nav ul#top-menu > li > a{
+	   color:inherit;
+   }
+
+   @media screen and (max-width: 991px){
+	   .mobile_nav ul#top-menu > li > a{
+		   display:inline-flex;
+		   justify-content:center;
+		   align-items:center;
+		   flex-direction:row-reverse;
+	   }
+
+	 .mobile_nav ul#top-menu > li > a::before {
+	   margin-left:10px;
+	   }
+   }  /* end @media screen and max-width: 991px */
+
+   .mobile_nav ul#top-menu .sub-menu{
+	   position:relative!important;
+	   opacity:1;
+	   visibility:visible;
+	   border:none;
+   }
+
+   .mobile_nav ul#top-menu .sub-menu::before,
+   .mobile_nav ul#top-menu .sub-menu::after{
+	   display:none;
+	   content:'';
+   }
+
+   .mobile_nav ul#top-menu .sub-menu li a{
+	   width:100%;
+   }
+
+   body #main-header{
+	   background-color:#fff;
+	   margin-top:0!important;
+	   width:100%;
+	   z-index:99;
+	   font-family: "Verdana", sans-serif;
+   }
+
+   /* changed position:absolute; to position:relative; to try and fix the shifting down issues. 20190211 */
+   body header#main-header{
+	   position:relative;
+	   top:0;
+	   border-bottom:1px solid rgba(0, 0, 0, 0.2);
+   }
+
+   @media screen and (min-width: 768px){
+	   body header#main-header{
+		   height:73px!important;
+	   }
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header{
+		   height:77px!important;
+	   }
+   }
+
+   body header#main-header .container{
+	 /*  max-width:1210px;*/   /* 20190325 - take off max-width for header so logo flushes to left of screen */
+	   height:70px!important;
+	   margin:0 auto;
+   }
+
+   @media screen and (min-width: 768px){
+	   body header#main-header .container{
+		   height:73px!important;
+	   }
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container{
+		   padding:0!important;
+		   height:77px!important;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation{
+	   display:flex;
+	   height:100%;
+	   position:relative;
+   }
+
+   body header#main-header .container #primary-navigation .logo_container{
+	   width:auto!important;
+	   position:relative;
+	   z-index:1;
+	   display:flex;
+	   height:100%;
+	   flex-direction:column;
+	   justify-content:center;
+	   min-width:174px!important;
+   }
+
+   body header#main-header .container #primary-navigation .logo_container a{
+	   display:flex;
+	   height:100%;
+	   flex-direction:column;
+	   justify-content:center;
+   }
+
+   body header#main-header .container #primary-navigation .logo_container a img#logo{
+	   background-color:transparent;
+	   margin-bottom:11px;
+	   margin-left:2px;
+	   width:153px!important;
+	   height:41px!important;
+   }
+
+   @media screen and (min-width: 768px){
+	   body header#main-header .container #primary-navigation .logo_container a img#logo{
+		   width:164px!important;
+		   height:44px!important;
+	   }
+   }
+
+   @media screen and (max-width: 991px){
+	   body header#main-header .container #primary-navigation .logo_container a img#logo{
+		   margin-left:10px;
+	   }
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation .logo_container a img#logo{
+		   margin-top:17px;
+		   margin-left:10px;
+		   width:100%;
+	   }
+   }
+
+   @media screen and (min-width: 1200px){
+	   body header#main-header .container #primary-navigation .logo_container a img#logo{
+		   margin-left:20px;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation{
+	   text-align:center;
+	   /* padding-top:0px!important; */
+	   width:100%;
+	   flex-grow:1;
+	   padding-left:0!important;
+	   list-style:none; /* 20190405 - get rid of bullets in header */
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation #et-top-navigation{
+		   position:absolute;
+		   padding-left:174px!important;
+	   }
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation #et-top-navigation{
+		   transform:scale(1);
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu{
+	   position:absolute;
+	   width:100%;
+	   top:0;
+	   right:0;
+	   text-align:right;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu .mobile_nav{
+	   position:relative;
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu .mobile_nav{
+		   display:none;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu .mobile_nav ul{
+	   position:absolute;
+	   top:100%;
+	   width:100%;
+	   text-align:left;
+	   background-color:#fff;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu .mobile_nav.closed ul{
+	   display:none;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu .mobile_nav .mobile_menu_bar{
+	   color:#333331!important;
+	   cursor:pointer;
+	   font-weight:500;
+	   margin-right:20px;
+	   display:inline-block;
+	   border-radius:5px!important;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu .mobile_nav .mobile_menu_bar::before{
+	   position:relative;
+	   top:0;
+	   left:0;
+	   font-size:24px;
+	   content:"";
+	   background-image:url("/wiki/public_html/img/mobile-menu-icon-grey.svg");
+	   background-repeat:no-repeat;
+	   background-position:center;
+	   text-align:center;
+	   cursor:pointer;
+	   color:#333331!important;
+	   display:block;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #et_mobile_nav_menu .mobile_nav .mobile_menu_bar:hover{
+	   background-color:#e1edc1;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav{
+	   float:none;
+	   display:block;
+	   padding-right:60px;
+	   overflow:hidden;
+	   height:64px;
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav{
+		   padding-right:220px;
+		   overflow:visible;
+		   display:inline-block;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu{
+	   display:flex!important;
+	   justify-content:space-evenly;
+	   flex-wrap:wrap;
+   }
+
+   @media screen and (max-width: 767px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu{
+		   display:flex!important;
+	   }
+   }
+
+   @media screen and (max-width: 991px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu{
+		   padding-top:2px;
+	   }
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu{
+		   padding-top:35px;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item{
+	   padding:0;
+	   position:relative;
+	   line-height:1em;
+	   display:inline-block;
+   }
+
+   @media screen and (max-width: 991px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item{
+		   margin-right:5px;
+	   }
+   }
+
+   @media screen and (min-width: 1200px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item{
+		   margin-right:10px;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item a{
+	   color:#333331!important;
+	   font-family:"Verdana", sans-serif;
+	   font-weight:500;
+	   display:block;
+	   border-radius:5px;
+	   line-height:1.625rem;
+	   padding:5px 9px;
+	   text-decoration:none;
+	   transition:color 0.2s,background-color 0.2s;
+	   font-size:14px;
+   }
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item a:visited{
+	color:#333331!important;}
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item a:hover{
+	color:#333331!important;}
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item a{
+		   font-size:16px;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item a::after{
+	   display:none;
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item a:hover{
+		   background-color:#e1edc1;
+	   }
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item .sub-menu{
+	   position:absolute;
+	   border:1px solid #CDCDCD;
+	   background:#fff;
+	   z-index:9999;
+	   width:auto;
+	   visibility:hidden;
+	   opacity:0;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item .sub-menu::before{
+	   left:35px;
+	   content:"";
+	   position:absolute;
+	   border-style:solid;
+	   display:block;
+	   width:0;
+	   z-index:1001;
+	   top:-16px;
+	   margin-left:-16px;
+	   border-width:0 16px 16px;
+	   border-color:#CDCDCD transparent;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item .sub-menu::after{
+	   left:35px;
+	   content:"";
+	   position:absolute;
+	   border-style:solid;
+	   display:block;
+	   width:0;
+	   z-index:1001;
+	   visibility:visible!important;
+	   top:-15px;
+	   margin-left:-16px;
+	   border-width:0 16px 16px;
+	   border-color:#FFF transparent;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item .sub-menu li{
+	   text-align:left;
+	   line-height:1.625rem!important;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item .sub-menu li a{
+	   line-height:1.625rem!important;
+	   color:#333331!important;
+	   padding:10px 25px;
+	   border-radius:0;
+	   display:block;
+	   white-space:nowrap;
+	   font-size:14px!important;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu > .menu-item .sub-menu li a:hover{
+	   background-color:#f5f4f0;
+   }
+
+   body header#main-header .container #primary-navigation #et-top-navigation #top-menu-nav #top-menu .menu-item:hover .sub-menu{
+	   visibility:visible;
+	   opacity:1;
+	   margin-top:10px;
+	}
+   body header#main-header .container #header-right-section{
+	   position:absolute;
+	   top:0;
+	   right:0;
+	   display:none;
+   }
+
+   @media screen and (min-width: 992px){
+	   body header#main-header .container #header-right-section{
+		   display:block;
+	   }
+   }
+
+/* 20190129 - added from line 120-121 of older version of the header code - Amie */
+   body header#main-header .container .menu-header-links-bottom-container .menu-item{
+	   display:inline-block;
+   }
+
+   body header#main-header .container .menu-header-links-bottom-container .menu-item a{
+	   color:#333331!important;
+	   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   body header#main-header .container #secondary-navigation{
+	   line-height:16px;
+   }
+
+   body header#main-header .container #secondary-navigation .container{
+	   display:inline-block;
+	   padding:0
+	   ;
+   }
+   body header#main-header .container #secondary-navigation .container #et-secondary-menu{
+	   float:right;
+   }
+
+/*		body header#main-header .container #secondary-navigation{right:0;top:0;}*/
+   body header#main-header .container #secondary-navigation,
+	   body header#main-header .container .menu-header-links-bottom-container{
+		   right:0;
+		   top:0;
+	   }
+
+   body header#main-header .container #secondary-navigation .container{
+	   height:32px!important;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link{
+	   padding-bottom:.75em;
+	   display:inline-block;
+	   position:relative;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link:first-of-type{
+	   margin-right:10px;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link:last-of-type{
+	   margin-right:29px;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link a{
+	   /*color:#333331!important;*/  /* 20190405 - removed */
+	   color:#006DCC!important; /* 20190405 - blue links in help dropdown menu*/
+	   font-size:12px;
+	   line-height:unset;
+	   height:auto;
+	   display:inline;
+	   padding:6px 8px;
+	   border:1px solid transparent;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link form.search-form{
+	   display:flex;
+	   flex-direction:row;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link form.search-form::after{
+	   content:"";
+	   clear:both;
+	   display:table;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link form.search-form label{
+	   flex-grow:1;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link form.search-form label .search-field{
+	   border-radius:5px 0 0 5px;
+	   border:1px solid #858585;
+	   border-right:none;
+	   width:100%;
+	   height:26px;
+	   padding-left:5px;
+	   font-size:12px;
+	   font-stretch:condensed;
+	   font-family:"Helvetica Neue", Helvetica, Arial;
+	   padding:0 5px!important;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link form.search-form .search-submit{
+	   border-top-left-radius:0;
+	   border-bottom-left-radius:0;
+	   border:none;
+	   color:#fff;
+	   cursor:pointer;
+	   display:inline-block;
+	   width:28px;
+	   height:26px;
+	   line-height:14px;
+	   vertical-align:text-top;
+	   background-position:5px;
+	   background-color:#006dcc;
+	   background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAABCRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIgogICAgICAgICAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyI+CiAgICAgICAgIDx0aWZmOlJlc29sdXRpb25Vbml0PjI8L3RpZmY6UmVzb2x1dGlvblVuaXQ+CiAgICAgICAgIDx0aWZmOkNvbXByZXNzaW9uPjU8L3RpZmY6Q29tcHJlc3Npb24+CiAgICAgICAgIDx0aWZmOlhSZXNvbHV0aW9uPjcyPC90aWZmOlhSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj43MjwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjE2PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6Q29sb3JTcGFjZT4xPC9leGlmOkNvbG9yU3BhY2U+CiAgICAgICAgIDxleGlmOlBpeGVsWURpbWVuc2lvbj4xNjwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgICAgIDxkYzpzdWJqZWN0PgogICAgICAgICAgICA8cmRmOkJhZy8+CiAgICAgICAgIDwvZGM6c3ViamVjdD4KICAgICAgICAgPHhtcDpNb2RpZnlEYXRlPjIwMTUtMDgtMTJUMTI6MDg6MDQ8L3htcDpNb2RpZnlEYXRlPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPlBpeGVsbWF0b3IgMy4zLjI8L3htcDpDcmVhdG9yVG9vbD4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CmDIOdAAAAFCSURBVDgRfZKxSgNBFEWXFMFCgliIhUVImUIsrCytLKwsLFKmsgr+RUgR8gVWIiIWYmVh519YLSIhiAQJKSxCmJybzCwzO7N5cJiZ++57M+y+LPPCGHMGTzCBJfzCK1x4tniLoQYjcKHiH1g4gfUB6nE1ComhNf6x3kBDxjzPd9h3YAyKx6gB4inoRhW3IwMC+hF8g+Iy8CDcrWVjboNE6YDn2vreghTip00cBInSAU8d/mEepBCmsAjEigO+LzD6NoWFs3vBYSEmNviSL6jh/bD+TqLOl6446Gbn3+TofAL6CzM49ivcHr0JGi5FPFSI/XVq06THfl/FrLvQBQ2VYg4t17hYETWJA9BLXOhF/ll/QKEPGTexN2qo7q1JBZrAZzgH5TRsiuomxbMSGwrLTZoJ23ap1ORlu7sia5u8s+6tAJrYpA0Taz+3AAAAAElFTkSuQmCC");background-repeat:no-repeat;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu{
+	  /* margin-top:12px;*/
+	   margin-top:6px; /* 20190324 - changed to raise the dropdown menu 6 px */
+	   position:absolute;
+	   /*right:0;*/  /* 20190322 removed/replaced */
+	   background-color:#fff;
+	   visibility:hidden;
+	   opacity:0;
+	   transition:all .2s ease-in-out;
+	   width:265px;
+	   padding:20px 25px;
+	   border:1px solid #cdcdcd;
+	  /* right:-50%;*/ /* added 20190322 - moves Help dropdown under the Help link */
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu::before,
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu::after{
+	   left:unset!important;
+	   right:35px!important;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu li{
+	   text-align:left;
+   }
+
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu li a{
+	   text-align:left;
+	   width:200px;
+	   padding:6px 0;
+	   font-size:16px;
+	   display:inline-block;
+	   -webkit-border-radius:6px;
+	   -moz-border-radius:6px;
+	   border-radius:6px;
+   }
+/*LVHA - order of link assignments is Link, Visited, Hover, :active*/
+
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu li a{
+	color:#fff;
+	}
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu li a:visited{
+	color:#fff;
+	}
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu li a:hover{
+	color:#fff;
+	}
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu li a:active{
+	color:#fff;
+	}
+   body header#main-header .container #secondary-navigation .header-top-link .sub-menu li a:focus{
+	   color:#fff;
+   }
+
+   body header#main-header .container #secondary-navigation #menu-header-links-top{
+	   display:flex;
+	   height:28px; /* 20190324 - makes clickable box smaller */
+   }
+
+   body header#main-header .container #secondary-navigation #menu-header-links-top > .header-top-link{
+	   display:flex;
+	   height:28px;/* 20190324 - makes clickable box smaller */
+   }
+
+   body header#main-header .container #secondary-navigation #menu-header-links-top .header-top-link.menu-item-has-children > a{
+	   display:flex;
+	   height:28px;/* 20190324 - makes clickable box smaller */
+   }
+
+   body header#main-header .container #secondary-navigation #menu-header-links-top .header-top-link.menu-item-has-children::after{
+	   content:'';
+	   border-left:3px solid transparent;
+	   border-right:3px solid transparent;
+	   border-top:7px solid #000;
+	   border-top:7px solid #000;
+	   margin-left:0px;
+	   display:inline-block;
+	   opacity:1;
+	   margin-top:11px;
+   }
+
+   body header#main-header .container #secondary-navigation #menu-header-links-top .header-top-link.menu-item-has-children .sub-menu{
+	   position:absolute;
+	   top:100%;
+	   right:-50%; /* 20190324 - added to move the Help dropdown menu directly under the Help link */
+   }
+
+   body header#main-header .container #secondary-navigation #menu-header-links-top .header-top-link.menu-item-has-children:hover .sub-menu{
+	   visibility:visible;
+	   opacity:1;
+   }
+
+   /* 20190129 - added the following 3 lines from older version, line 137-139 */
+
+   body header#main-header .container .menu-header-links-bottom-container .header-right-link{
+	   /* font-size:16px; */
+	   margin:10px;
+   }
+
+   body header#main-header .container .menu-header-links-bottom-container .header-right-button{
+	   position:relative;
+	   bottom:2px;
+	   margin-right:17px;
+   }
+
+   body header#main-header .container .menu-header-links-bottom-container .header-right-button a{
+	   appearance:none;
+	   -webkit-touch-callout:none;
+	   background-color:#F5F4F1;
+	   border-radius:4px;
+	   border:1px solid #BEB8A7;
+	   color:#333331!important;
+	   cursor:pointer;
+	   display:inline-block;
+	   font-size:16px;
+	   letter-spacing:-0.5px;
+	   font-weight:normal;
+	   line-height:1;
+	   padding:5px 20px;
+	   position:relative;
+	   text-decoration:none;
+	   transition:padding 0.2s;
+	   user-select:none;
+	   vertical-align:middle;
+	   white-space:nowrap;
+   }
+
+   body .container{
+	   width:100%;
+   }
+
+   .sub-menu{
+	   position:absolute;
+	   border:1px solid #CDCDCD;
+	   background:#fff;
+	   z-index:9999;
+	   width:240px;
+	   visibility:hidden;
+	   opacity:0;
+   }
+
+   .sub-menu::before{
+	   left:35px;content:"";
+	   position:absolute;
+	   border-style:solid;
+	   display:block;
+	   width:0;
+	   z-index:1001;
+	   top:-16px;
+	   margin-left:-16px;
+	   border-width:0 16px 16px;
+	   border-color:#CDCDCD transparent;
+   }
+
+   .sub-menu::after{
+	   left:35px;
+	   content:"";
+	   position:absolute;
+	   border-style:solid;
+	   display:block;
+	   width:0;
+	   z-index:1001;
+	   visibility:visible!important;
+	   top:-15px;
+	   margin-left:-16px;
+	   border-width:0 16px 16px;
+	   border-color:#FFF transparent;
+   }
+
+   .sub-menu li{
+	   text-align:left;
+   }
+
+   .sub-menu li a{
+	   border-radius:6px;
+	   padding:6px 20px;
+	   display:inline-block;
+   }
+/*LVHA - order of link assignments is Link, Visited, Hover, :active*/
+  /* body.sub-menu li a{
+	color:#0060D7;}
+   body.sub-menu li a:visited{
+	color:#0060D7;}
+   body.sub-menu li a:hover{
+	color:#0060D7;}
+   body.sub-menu li a:active{
+	   color:#0060D7;}
+	   */
+
+   .et_search_outer{
+	   display:none!important;
+   }
+}
+
+/*! CSS Used from: https://familysearch-org.go-vip.co/en/_static/??-eJyljksOwjAMRC9EMFSBHeIsaeoWk6SJaqeF2xMqKpUdn908eebJMCVlYy/YC8gFAzLUhh0OI3mPqoK2HM2EHAPOWb1ga5k3sFqHrJLPHfUMV5RkrIMQm+yLcaKmQ2FojcU6Rqc8uRJuwHL3P5k4WjJeUZm8wx+ygA2ZRfntY5xrtgMloXm+pk80pbLkZ/0cTvuD1jutj7p6AIGznsA= ; media=all */
+@media all{
+   .screen-reader-text{
+	   border:0;
+	   clip:rect(1px,1px,1px,1px);
+	   -webkit-clip-path:inset(50%);
+	   -moz-clip-path:inset(50%);
+	   clip-path:inset(50%);
+	   height:1px;
+	   margin:-1px;
+	   overflow:hidden;
+	   padding:0;
+	   position:absolute!important;
+	   width:1px;
+	   word-wrap:normal!important;
+   }
+}
+ @font-face{font-family:'FontAwesome';src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot#iefix&v=4.6.3') format('embedded-opentype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
+/*-------------------------------------------------------*/
+/* Amie - this is the beginning of the first css file */
+
+html.mobile-menu-open body {
+	max-height: 100%;
+	overflow: hidden;
+	position: fixed !important;
+	top: 0 !important;
+	right: 260px !important;
+	width: 100vw;
+}
+
+	/*! CSS Used from: style.css?m=1550685897g ; media=all */
+	@media all{
+
+		@media screen and (max-width: 991px){
+			#top-menu{
+				transition:right 0.25s ease-in-out!important;
+				right:-260px;
+				display:block!important;
+			}
+			#top-menu .sub-menu{
+				transition:max-height 0.4s cubic-bezier(0, 1, 0, 1);
+			}
+			.mobile-menu-overlay{
+				background-color:#333331;
+				opacity:0.5;
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index:1;
+				display:none;
+			}
+			.mobile_nav span.mobile_menu_bar_toggle{
+				line-height:1.625rem!important;
+				margin-top:2px;
+				line-height:16px;
+				padding:5px 9px;
+				font-size:14px;
+			}
+
+			.mobile_nav span.mobile_menu_bar_toggle::before{
+				height:28px!important;
+				line-height:28px!important;
+			}
+			.mobile_nav span.mobile_menu_bar_toggle{
+				line-height:16px;
+				padding:5px 9px;
+				font-size:14px;
+			}
+
+			/* hide regular dropdown menu under HELP in mobile view */
+			#top-menu .sub-menu {
+				opacity:0 !important;
+			}
+			.mobile_nav.opened #top-menu .sub-menu {
+				opacity:1 !important;
+			}
+			/* The following is required to counter balance an error in the js that
+			makes the words disappear every other time you open the mobile view menu at the top right
+			of the screen.  Someone, that knows js, should fix the error in the js code.*/
+			.mobile_nav.closed #top-menu .sub-menu {
+				opacity:1 !important;
+			}
+
+			.mobile_nav #top-menu{
+				background-color:#2E2D2A!important;
+				min-height:100vh!important;
+				width:260px!important;
+				position:fixed!important;
+				top:0px!important;
+				margin:0!important;
+				padding:0!important;
+				z-index:2;
+				-webkit-box-shadow:-3px 0px 16px rgba(51, 51, 49, 0.8);
+				-moz-box-shadow:-3px 0px 16px rgba(51, 51, 49, 0.8);
+				box-shadow:-3px 0px 16px rgba(51, 51, 49, 0.8);
+			}
+			.mobile_nav #top-menu > li.menu-item > a{
+				display:inline-flex!important;
+				flex-direction:row!important;
+				justify-content:flex-start!important;
+				align-items:center!important;
+				background-color:#4D4D4A!important;
+				width:100%!important;
+				color:#fff!important;
+			}
+			.mobile_nav #top-menu > li.menu-item > a::before{
+				margin-left:10px;
+			}
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children{
+				transition:height 0.25s ease-in-out;
+				margin-top:3px;
+				font-size: 1em!important;  /* 20190324 */
+			}
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children a{
+				font-family:Verdana, Ayuthaya, "HanaMinBFont", sans-serif;
+				line-height:25px;
+			}
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children > a:hover,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children > a:active,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children > a:focus{
+				text-decoration:none;
+				background-color:#555555!important;
+			}
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children a{
+				padding:9px 0px 9px 66px;
+				line-height:1.625rem;
+			}
+			/* 20190430 - changed padding in help dropdown mobile view (they were spaced too far apart)*/
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children ul.sub-menu li.menu-item.menu-item-object-custom a {
+				padding: 4px 0 4px 66px;
+			}
+			.mobile_nav #top-menu li.menu-item.mobile-sign-in{
+				border-top:11px solid #4d4d4a;
+				margin-top:0;
+			}
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree > a,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search > a,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories > a,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing > a,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple > a,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help > a{
+				line-height:25px;
+				position:relative;
+			}
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree > a::before,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search > a::before,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories > a::before,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing > a::before,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple > a::before,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help > a::before{
+				display:block;
+				content:'';
+				background-repeat:no-repeat!important;
+				background-position:center!important;
+				margin:0!important;
+				height:15px;
+				width:15px;
+				position:absolute;
+				left:43px;
+			}
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree > a::after,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search > a::after,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories > a::after,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing > a::after,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple > a::after,
+			.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help > a::after{
+				display:block;content:'';
+				background-image:url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3Csvg%20version%3D%221.2%22%20baseProfile%3D%22tiny%22%20id%3D%22Art%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%0A%09%20x%3D%220px%22%20y%3D%220px%22%20width%3D%227px%22%20height%3D%2211px%22%20viewBox%3D%220%200%207%2011%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M0.5%2C10.9c-0.189%2C0-0.4-0.37-0.4-0.9V1c0-0.53%2C0.211-0.9%2C0.4-0.9c0.223%2C0%2C0.745%2C0.261%2C1.169%2C0.65%0A%09l4.517%2C4.147C6.361%2C5.058%2C6.458%2C5.272%2C6.458%2C5.5S6.361%2C5.942%2C6.186%2C6.103L1.669%2C10.25C1.246%2C10.639%2C0.723%2C10.9%2C0.5%2C10.9z%22/%3E%0A%3Crect%20y%3D%220%22%20fill%3D%22none%22%20width%3D%227%22%20height%3D%2211%22/%3E%0A%3C/svg%3E%0A")!important;
+				background-repeat:no-repeat!important;
+				background-position:center!important;
+				height:15px;
+				width:15px;
+				position:absolute;
+				left:15px;
+				transition:transform 0.25s ease-in-out;
+			}
+			.mobile_nav #top-menu li.menu-item.icon-tree > a::before{
+				background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%229%22%20viewBox%3D%220%200%2014%209%22%3E%3Ctitle%3Efamily-tree-white-xs%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Art%22%3E%3Crect%20x%3D%220.1%22%20y%3D%222.1%22%20width%3D%224.8%22%20height%3D%224.8%22%20rx%3D%220.9%22%20ry%3D%220.9%22%20style%3D%22fill%3A%23fff%22/%3E%3Cpolygon%20points%3D%2212%208.9%2011.07%207.93%2011.1%207%2012.07%206.07%2013.9%206.1%2013.9%208.9%2012%208.9%22%20style%3D%22fill%3A%23fff%22/%3E%3Cpolygon%20points%3D%2212%202.9%2011.07%201.93%2011.1%201%2012.07%200.07%2013.9%200.1%2013.9%202.9%2012%202.9%22%20style%3D%22fill%3A%23fff%22/%3E%3Cline%20x1%3D%223%22%20y1%3D%224.5%22%20x2%3D%228.7%22%20y2%3D%224.5%22%20style%3D%22fill%3Anone%3Bstroke%3A%23fff%3Bstroke-miterlimit%3A10%22/%3E%3Cpath%20d%3D%22M11%2C7.5H8.75a.25.25%2C0%2C0%2C1-.25-.25V1.75a.25.25%2C0%2C0%2C1%2C.25-.25H11%22%20style%3D%22fill%3Anone%3Bstroke%3A%23fff%3Bstroke-miterlimit%3A10%22/%3E%3Crect%20width%3D%2214%22%20height%3D%229%22%20style%3D%22fill%3Anone%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+			.mobile_nav #top-menu li.menu-item.icon-search > a::before{
+				background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%3E%3Ctitle%3Esearch-white-xs%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Art%22%3E%3Ccircle%20cx%3D%229%22%20cy%3D%223%22%20r%3D%222.5%22%20style%3D%22fill%3Anone%3Bstroke%3A%23fff%3Bstroke-miterlimit%3A10%3Bstroke-width%3A1.0000000000000002px%22/%3E%3Cline%20x1%3D%2213.5%22%20y1%3D%227.5%22%20x2%3D%2211%22%20y2%3D%225%22%20style%3D%22fill%3Anone%3Bstroke%3A%23fff%3Bstroke-linecap%3Around%3Bstroke-miterlimit%3A10%22/%3E%3Cpath%20d%3D%22M9.5%2C7A3.47%2C3.47%2C0%2C0%2C1%2C9%2C6.95V9H2V4H5.05A3.47%2C3.47%2C0%2C0%2C1%2C5%2C3.5%2C3.47%2C3.47%2C0%2C0%2C1%2C5.05%2C3H2A1%2C1%2C0%2C0%2C0%2C1%2C4V9a1%2C1%2C0%2C0%2C0%2C1%2C1H9a1%2C1%2C0%2C0%2C0%2C1-1V6.95A3.47%2C3.47%2C0%2C0%2C1%2C9.5%2C7Z%22%20style%3D%22fill%3A%23fff%22/%3E%3Crect%20width%3D%2214%22%20height%3D%2211%22%20style%3D%22fill%3Anone%22/%3E%3Cpath%20d%3D%22M11%2C10a1%2C1%2C0%2C0%2C0-.22-.16L9.67%2C9.28A3%2C3%2C0%2C0%2C0%2C8.5%2C9h-6a3%2C3%2C0%2C0%2C0-1.17.28L.22%2C9.83A1%2C1%2C0%2C0%2C0%2C0%2C10v.87A.78.78%2C0%2C0%2C0%2C.5%2C11h10a.78.78%2C0%2C0%2C0%2C.5-.15Z%22%20style%3D%22fill%3A%23fff%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+			.mobile_nav #top-menu li.menu-item.icon-memories > a::before{
+				background-image:url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2021.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2014%2011%22%20style%3D%22enable-background%3Anew%200%200%2014%2011%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text/css%22%3E%0A%09.st0%7Bfill%3A%23FFFFFF%3B%7D%0A%09.st1%7Bfill%3Anone%3B%7D%0A%3C/style%3E%0A%3Ctitle%3Ememories-white-xs%3C/title%3E%0A%3Cg%20id%3D%22Layer_2%22%3E%0A%09%3Cg%20id%3D%22Art%22%3E%0A%09%09%3Cpath%20class%3D%22st0%22%20d%3D%22M1.6%2C10.9c-0.1%2C0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.2-0.1-0.4V9.9H1C0.5%2C9.9%2C0.1%2C9.5%2C0.1%2C9%0A%09%09%09c0-0.5%2C0.4-0.9%2C0.9-0.9c0%2C0%2C0%2C0%2C0%2C0h0.1V6.9H1C0.5%2C6.9%2C0.1%2C6.5%2C0.1%2C6S0.5%2C5.1%2C1%2C5.1h0.1V3.9H1C0.5%2C3.9%2C0.1%2C3.5%2C0.1%2C3%0A%09%09%09S0.5%2C2.1%2C1%2C2.1h0.1V2C1.2%2C1%2C2%2C0.2%2C3%2C0.1h10.4c0.1%2C0%2C0.3%2C0.1%2C0.3%2C0.2c0.1%2C0.1%2C0.1%2C0.2%2C0.1%2C0.4v7.7c0%2C0.1%2C0%2C0.3-0.1%2C0.4%0A%09%09%09c-0.1%2C0.1-0.2%2C0.2-0.3%2C0.2h-0.3V1.7c0-0.5-0.2-0.8-0.7-0.8h-8c-0.5%2C0-1.5%2C0-1.5%2C1.1v0.1h8.5c0.1%2C0%2C0.2%2C0%2C0.3%2C0.1%0A%09%09%09c0.1%2C0.1%2C0.1%2C0.2%2C0.1%2C0.4v7.8c0%2C0.1%2C0%2C0.3-0.1%2C0.4c-0.1%2C0.1-0.2%2C0.2-0.3%2C0.1H1.6z%20M8.6%2C6.8C8.3%2C7.3%2C7.8%2C7.7%2C7.3%2C7.7H7.2v0.1h0.1%0A%09%09%09l1.2%2C0.6c0.2%2C0.1%2C0.3%2C0.3%2C0.4%2C0.4c0%2C0%2C0.1%2C0.6%2C0.2%2C0.6S8.3%2C9.9%2C6.5%2C9.9v0.2h2.6c0.6%2C0%2C1-0.4%2C1-1V3.9c0-0.6-0.4-1-1-1H3.9%0A%09%09%09c-0.6%2C0-1%2C0.4-1%2C1v5.2c0%2C0.6%2C0.4%2C1%2C1%2C1h2.6V9.9c-1.8%2C0-2.6-0.3-2.6-0.4l0.2-0.6c0.1-0.2%2C0.2-0.4%2C0.4-0.5l1.2-0.6h0.1V7.7H5.7%0A%09%09%09c-0.5-0.1-1-0.4-1.3-0.8c0.2-0.1%2C0.3-0.2%2C0.5-0.3C5%2C6.2%2C5.1%2C5.8%2C5%2C5.4c0-0.1%2C0-0.2%2C0-0.2c0-0.3%2C0.1-0.6%2C0.3-0.8C5.6%2C4.1%2C6%2C4%2C6.5%2C4%0A%09%09%09c0.4%2C0%2C0.9%2C0.1%2C1.2%2C0.4C7.9%2C4.6%2C8%2C4.9%2C8%2C5.2c0%2C0.1%2C0%2C0.2%2C0%2C0.3C7.9%2C5.8%2C8%2C6.2%2C8.2%2C6.5C8.3%2C6.7%2C8.4%2C6.8%2C8.6%2C6.8L8.6%2C6.8z%22/%3E%0A%09%09%3Crect%20class%3D%22st1%22%20width%3D%2214%22%20height%3D%2211%22/%3E%0A%09%3C/g%3E%0A%3C/g%3E%0A%3C/svg%3E%0A");}
+			.mobile_nav #top-menu li.menu-item.icon-indexing > a::before{
+				background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%229%22%20viewBox%3D%220%200%2014%209%22%3E%3Ctitle%3Eindexing-white-xs%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Art%22%3E%3Crect%20x%3D%221.5%22%20y%3D%220.5%22%20width%3D%2211%22%20height%3D%228%22%20rx%3D%220.5%22%20ry%3D%220.5%22%20style%3D%22fill%3Anone%3Bstroke%3A%23fff%3Bstroke-miterlimit%3A10%22/%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%228%22%20height%3D%221%22%20style%3D%22fill%3A%23fff%22/%3E%3Crect%20x%3D%223%22%20y%3D%226%22%20width%3D%222%22%20height%3D%221%22%20style%3D%22fill%3A%23fff%22/%3E%3Crect%20x%3D%221%22%20width%3D%2212%22%20height%3D%222%22%20rx%3D%220.5%22%20ry%3D%220.5%22%20style%3D%22fill%3A%23fff%22/%3E%3Cpolyline%20points%3D%226%205.7%206.99%206.3%207.99%205.7%208.99%206.3%2010%205.7%2011%206.3%22%20style%3D%22fill%3Anone%3Bstroke%3A%23fff%3Bstroke-linecap%3Around%3Bstroke-miterlimit%3A10%22/%3E%3Crect%20width%3D%2214%22%20height%3D%229%22%20style%3D%22fill%3Anone%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+			.mobile_nav #top-menu li.menu-item.icon-help > a::before{
+				background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%2213%22%20viewBox%3D%220%200%2014%2013%22%3E%3Ctitle%3Ehelp-white-xs%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Art%22%3E%3Cpath%20d%3D%22M12.08%2C12.91a5.35%2C5.35%2C0%2C0%2C1-2.1-.84%2C6.75%2C6.75%2C0%2C0%2C0-3.47-1.15C3.06%2C10.92.25%2C8.5.25%2C5.51S3.06.1%2C6.51.1s6.26%2C2.43%2C6.26%2C5.41a6.23%2C6.23%2C0%2C0%2C1-1.28%2C3.4C10.71%2C10.06%2C11.53%2C12.09%2C12.08%2C12.91ZM6.52%2C7.52A.78.78%2C0%2C0%2C0%2C6%2C7.74a.72.72%2C0%2C0%2C0-.23.54A.7.7%2C0%2C0%2C0%2C6%2C8.85a.83.83%2C0%2C0%2C0%2C.55.2.8.8%2C0%2C0%2C0%2C.54-.2.71.71%2C0%2C0%2C0%2C.24-.56.73.73%2C0%2C0%2C0-.22-.54A.77.77%2C0%2C0%2C0%2C6.52%2C7.52Zm.12-4.69a1%2C1%2C0%2C0%2C1%2C.71.24.75.75%2C0%2C0%2C1%2C.27.59A.64.64%2C0%2C0%2C1%2C7.53%2C4a1.26%2C1.26%2C0%2C0%2C1-.22.29l-.46.41a7.51%2C7.51%2C0%2C0%2C0-.59.55%2C1.93%2C1.93%2C0%2C0%2C0-.37.55%2C1.91%2C1.91%2C0%2C0%2C0-.14.75A.73.73%2C0%2C0%2C0%2C6%2C7.11a.72.72%2C0%2C0%2C0%2C.51.19.65.65%2C0%2C0%2C0%2C.7-.59c0-.15.06-.26.08-.32a.86.86%2C0%2C0%2C1%2C.07-.17A.91.91%2C0%2C0%2C1%2C7.45%2C6l.27-.26q.62-.54.86-.77A2.38%2C2.38%2C0%2C0%2C0%2C9%2C4.44a1.58%2C1.58%2C0%2C0%2C0%2C.19-.78%2C1.82%2C1.82%2C0%2C0%2C0-.32-1A2.2%2C2.2%2C0%2C0%2C0%2C8%2C1.88a3.11%2C3.11%2C0%2C0%2C0-1.33-.27%2C3%2C3%2C0%2C0%2C0-1.42.33%2C2.46%2C2.46%2C0%2C0%2C0-.93.82%2C1.84%2C1.84%2C0%2C0%2C0-.32%2C1%2C.68.68%2C0%2C0%2C0%2C.22.49.75.75%2C0%2C0%2C0%2C.55.22.76.76%2C0%2C0%2C0%2C.75-.62%2C2%2C2%2C0%2C0%2C1%2C.42-.76A1%2C1%2C0%2C0%2C1%2C6.64%2C2.84Z%22%20style%3D%22fill%3A%23fff%22/%3E%3Crect%20width%3D%2214%22%20height%3D%2213%22%20style%3D%22fill%3Anone%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+			.mobile_nav #top-menu .sub-menu{
+				position:relative!important;
+				opacity:0;
+				visibility:visible;
+				border:none;
+				background-color:#2E2D2A!important;
+				height:auto;
+				overflow:hidden;
+				transition:max-height 0.4s ease-in-out;
+			}
+			.mobile_nav #top-menu .sub-menu::before,
+			.mobile_nav #top-menu .sub-menu::after{
+				display:none;
+				content:'';
+			}
+			.mobile_nav #top-menu .sub-menu li a{
+				width:100%;
+				color:#fff;
+				border-radius:0;
+			}
+			.mobile_nav #top-menu .sub-menu li a:hover{
+				background-color:#555555;
+				text-decoration:none!important;
+			}
+		} /* end @media screen and max-width: 991px */
+
+	} /* end @media all */
+
+	/*  -------------------------------------------------*/
+
+/* Amie - this is the beginning of the second css file */
+
+	/*! CSS Used from: https://www.familysearch.org/fsblog/en/_static/??-eJx9T9sKwjAM/SG7zMsQH8Rv6dow49KuLK3SvzeIjAnq4+Hc4ZEMRcfFo4ATAU+SoefJjYapn+1cQXJlbALFRgUbUIebYsaYIRSTuAwUBW6Yk3UjhMkX1qxMjN4Mlhk14g9aQpcZN4GAniwyhlfLCiS2FWfDOFhXPzb9tCu3xl+P5KtyAr2VEec76TCze/9W6SWct13XHk9td9g/AaGRcjQ= ; media=all */
+	@media all{
+
+		@media screen and (max-width: 991px){
+			html.mobile-menu-open body #top-menu{right:0!important;}
+			html.mobile-menu-open .mobile-menu-overlay{display:block;}
+		}
+
+/* Amie - additional fixes added to header.css */
+
+		/* 20190322 - on smaller window size, remove border of tables in order to clean up the look of the table.*/
+		@media (max-width: 720px){
+		.content table {
+			border: unset!important;
+			padding-top:2.5rem; /* 20190430 - put space between header and sidebar */
+			}
+		}
+
+		/* 20190324 - fixes gap between tabs and main body. */
+		#mw-navigation #mw-head {
+
+			top: 83px !important;             /* change this to reflect the FamilySearch header height +3px */
+			z-index: 0 !important;   /* fixes see-through dropdown menus */
+		}
+		/*@media (max-width:985px) and (min-width: 768px){
+			top:80px;
+		}*/
+		#simpleSearch {
+			height: 1.6rem;
+		}
+		/*20190325 -  #mw-panel .portal - left sidebar - adjust spacing */
+		#mw-panel .portal{
+			padding:unset;
+		}
+		#mw-panel .portal .body {
+			margin-left:1.25em;
+		}
+
+	} /* end @media all */
+/*</style>*/
+
+/* this is the end  of header.css */

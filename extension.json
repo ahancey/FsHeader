@@ -1,0 +1,43 @@
+{
+	"name": "FsHeader",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:GregRundlett Greg Rundlett]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:FsHeader",
+	"descriptionmsg": "fsheader-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\FsHeader\\": "includes/"
+	},
+	"config": {
+		"FsHeaderEnableFoo": {
+			"description": "Enable the Foo feature.",
+			"value": true
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\FsHeader\\Hooks::onBeforePageDisplay"
+	},
+	"MessagesDirs": {
+		"FsHeader": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "FsHeader/resources"
+	},
+	"ResourceModules": {
+		"ext.FsHeader": {
+			"dependencies": [],
+			"messages": [],
+			"styles": ["common.css", "header.css", "footer.css"],
+			"scripts": ["script.js"]
+		}
+	},
+	"manifest_version": 2
+}
