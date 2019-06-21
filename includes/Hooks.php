@@ -33,24 +33,26 @@ class Hooks {
 		$out->addModules ("ext.FsHeader");
 
 		global $wgUser;
+
 		$t = function ( $key ) use ( $out ) {
 			echo $out->msg( $key )->inContentLanguage()->escaped();
 		};
-		ob_start();
-		require "/opt/htdocs/wiki/public_html/header.php";
-		$html = ob_get_contents();
-	    // $out->addJsConfigVars('myHeader', $html);
-	    	// get rid of the output buffer so it isn't flushed automatically
-	    ob_end_clean();
-	    // output the header at the end of the content
-	    // we fix it up with javascript
-	    $out->addHtml($html);
 
 		ob_start();
 		require "/opt/htdocs/wiki/public_html/footer.php";
 		$html = ob_get_contents();
 		ob_end_clean();
 		$out->addHTML($html);
+
+		ob_start();
+		require "/opt/htdocs/wiki/public_html/header.php";
+		$html = ob_get_contents();
+		// get rid of the output buffer so it isn't flushed automatically
+		ob_end_clean();
+		// output the header at the end of the content
+		// we fix it up with javascript
+		$out->addHtml($html);
+
 
 		// modify the login links
 		if ( $wgUser->isLoggedIn() ) {
