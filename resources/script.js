@@ -1,8 +1,20 @@
 jQuery(document).ready(function ($) {
+	// move the main-header to the top of the page
+	var h = document.getElementById('main-header');
+	// desktop insertion point
+	var a = document.getElementById('mw-page-base');
+	var isMobile = false;
+	if ( a == null ) {
+		// mobile insertion point
+		a = document.getElementById('mw-mf-viewport');
+		isMobile = true;
+	}
+	a.prepend(h);
+	// change the footer layout for mobile
+    if ( isMobile ) {
+		$('#fs-footer').css({"width":"80%", "bottom":"-200px", "left":"1.25rem", "padding-bottom":"1.5rem"});
 
-	var h = document.getElementById('main-header'); var a = document.getElementById('mw-page-base'); a.prepend(h);
-	
-// var html = if ( mw.config.exists('myHeader') mw.config.get( 'myHeader' ); var a = document.getElementById('mw-page-base'); a.append(html);
+	}
 
 	console.log("Document ready.");
 
