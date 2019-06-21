@@ -36,7 +36,8 @@
 			"dependencies": [],
 			"messages": [],
 			"styles": ["common.css", "header.css", "footer.css"],
-			"scripts": ["script.js"]
+			"scripts": ["script.js"],
+			"targets": ["desktop", "mobile"]
 		}
 	},
 	"manifest_version": 2
