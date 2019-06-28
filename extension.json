@@ -35,7 +35,7 @@
 		"ext.FsHeader": {
 			"dependencies": [],
 			"messages": [],
-			"styles": ["common.css", "header.css", "footer.css"],
+			"styles": ["header.css", "footer.css", "common.css"],
 			"scripts": ["script.js"],
 			"targets": ["desktop", "mobile"]
 		}
