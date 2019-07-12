@@ -2,6 +2,11 @@
 
 	// move the main-header to the top of the page
 	var h = document.getElementById('main-header');
+	// move the footer to the bottom of the page
+	var ff = document.getElementById('fs-footer');
+	var f = document.getElementById('footer');
+	f.append(ff);
+
 	// desktop insertion point
 	var a = document.getElementById('mw-page-base');
 	var isMobile = false;
