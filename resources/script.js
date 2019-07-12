@@ -24,7 +24,7 @@
 
 	// change the footer layout for mobile
     if ( isMobile ) {
-		$('#fs-footer').css({"width":"80%", "bottom":"-400px", "left":"1.25rem", "padding-bottom":"1.5rem"});
+		$('#fs-footer').css({"width":"80%", "left":"1.25rem", "padding-bottom":"1.5rem"});
 
 	}
 
