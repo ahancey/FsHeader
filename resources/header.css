@@ -13,6 +13,7 @@ html,body {
 	line-height: 1.6rem;
 	font-family: Helvetica, Verdana, san-serif;
 	color:#262626;
+	/* background-color: lightyellow; */
  }
 
  h1, h2 {
@@ -1016,6 +1017,59 @@ body {
 	   vertical-align:middle;
 	   white-space:nowrap;
    }
+
+   #main-header .fs-button--small {
+	   appearance: none;
+       -webkit-touch-callout: none;
+       background-color: #f5f4f1;
+       border-radius: 4px;
+       border: 1px solid #beb8a7;
+       color: #333331;
+       cursor: pointer;
+       display: inline-block;
+       font-size: 1rem;
+       font-weight: normal;
+       line-height: 1;
+       padding: 0.607rem 1.429rem;
+       /* [1] */
+       position: relative;
+       text-decoration: none;
+       transition: padding 0.2s;
+       user-select: none;
+       vertical-align: middle;
+       white-space: nowrap;
+	   text-align: center;
+	   margin: 6px 20px;
+    }
+	#main-header .fs-button--small.is-loading:after,#global-footer .fs-button--small.is-loading:after,#langPickerModal .fs-button--small.is-loading:after,#helpFeedbackModal .fs-button--small.is-loading:after {
+	    width: 16px;
+	    height: 16px;
+	    margin-top: 0;
+		}
+
+    #main-header .fs-button--small:hover {
+        text-decoration: none;
+		background-color: #fbfaf9;
+    	color: #333331;
+    }
+
+	#main-header .fs-button:active {
+		background-color: #e8e6e0;
+	}
+
+	#main-header .fs-button--recommended {
+		background-color: #3073dd;
+		border: 1px solid #246bdb;
+	}
+
+    #main-header .auxilary-links {
+        display: none;
+    }
+
+    .locale-zh #global-header .hamburger-icon:before {
+        margin-bottom: 9px;
+    }
+
 
    body .container{
 	   width:100%;
