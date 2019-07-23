@@ -39,13 +39,13 @@ class Hooks {
 		};
 
 		ob_start();
-		require "/opt/htdocs/wiki/public_html/footer.php";
+		require "footer.php";
 		$html = ob_get_contents();
 		ob_end_clean();
 		$out->addHTML($html);
 
 		ob_start();
-		require "/opt/htdocs/wiki/public_html/header.php";
+		require "header.php";
 		$html = ob_get_contents();
 		// get rid of the output buffer so it isn't flushed automatically
 		ob_end_clean();
