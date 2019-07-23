@@ -30,8 +30,8 @@
 
 			<span class="menu-item" id="teconsent" consent="0,1,2" style="display: inline;">
 				<script async="async" lang="<?php $t ('footer-cookiepref');?>"
-					src="//consent.trustarc.com/notice?domain=familysearch.org&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;oc=1&amp;fade=30000&amp;cdn=1&language=<?php $t ('header-language');?>"
-					id="truste_0.740075485905165">
+					src="//consent.trustarc.com/notice?domain=familysearch.org&amp;c=teconsent&amp;js=bb&amp;noticeType=bb&amp;text=true&amp;oc=1&amp;fade=30000&amp;cdn=1&language=<?php $t ('header-language');?>"
+					id="truste_0.740075485905165" crossorigin="">
 				</script>
 			</span>
 
