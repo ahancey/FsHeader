@@ -49,8 +49,6 @@
 	"header-more":"더 보기",
 	"header-helpothers":"다른 사용자 돕기",
 	"header-volunteer":"자원 봉사자",
-	"header-gettingstarted":"",
-	"header-mycases":"",
 	"header-temple":"성전",
 	"header-allreserved":"예약된 모든 의식",
 	"header-notprinted":"인쇄되지 않은 의식",
@@ -76,5 +74,5 @@
 	"footer-disclaimers":"면책 조항",
 	"footer-footerchurchlogo":"바닥 글 교회 로고",
 	"footer-serviceprovidedby":"에서 제공하는 서비스 ... ",
-	"footer-mormondotcomurl":"https://www.mormon.org/kor?lang=kor "
+	"footer-mormondotcomurl":"https://www.mormon.org/kor?lang=kor"
 }

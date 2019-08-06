@@ -49,7 +49,7 @@
 			<span>&#x24B8; <?php $t ('footer-intellectualreserve');?></span>
 			<span
 				class="service-by-link">
-				<a href="<?php $t ('footer-footerchurchlogo');?>" data-component="AdobeLinkTracker" data-test="footer-service-by-link"
+				<a href="<?php $t ('footer-mormondotcomurl');?>" data-component="AdobeLinkTracker" data-test="footer-service-by-link"
 					data-config="{&quot;type&quot;: &quot;e&quot;, &quot;name&quot;: &quot;ftr_srvcby&quot;}"><?php $t ('footer-ldschurch');?></a>
 			</span>
 		</div> <!-- end class="copyright-notice" -->
