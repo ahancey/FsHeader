@@ -5,7 +5,9 @@
 	// move the footer to the bottom of the page
 	var ff = document.getElementById('fs-footer');
 	var f = document.getElementById('footer');
-	f.append(ff);
+	if (f && ff) {
+		f.append(ff);
+	}
 
 	// desktop insertion point
 	var a = document.getElementById('mw-page-base');
