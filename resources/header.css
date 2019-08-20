@@ -16,8 +16,13 @@ html,body {
 	/* background-color: lightyellow; */
  }
 
+@font-face {
+    font-family: "Museo";
+    src: url(/wiki/public_html/Museo_Slab_500.otf) format("opentype");
+}
+
  h1, h2 {
-	font-family: Helvetica, Verdana, serif!important;
+	font-family: Museo, Helvetica, Verdana, serif!important;
 	color: #252525;
 	line-height: 1.3;
 	border-bottom: 1px solid #aaa;
@@ -440,7 +445,7 @@ body {
 	   background-color:#fff;
 	   margin-top:0!important;
 	   width:100%;
-	   z-index:99;
+	   z-index:1;
 	   font-family: "Verdana", sans-serif;
    }
 
