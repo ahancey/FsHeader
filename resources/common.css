@@ -14,6 +14,33 @@
     padding-top: 73px;
 }
 
+/* define number of columns based on screen size */
+/* Define spacing and # of columns based on screen size */
+@media screen and (min-width: 1400px) {
+ .column-numbers{
+   column-count: 5;
+   padding-left: 9% !important;
+}}	
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+ .column-numbers{
+   column-count: 4;
+   padding-left: 11% !important;
+}}
+@media screen and (min-width: 900px) and (max-width:1199px) {
+ .column-numbers{
+   column-count: 3;
+   padding-left:14% !important;
+}}
+@media screen and (min-width: 700px) and (max-width:899px) {
+ .column-numbers{
+   column-count: 2;
+   padding-left:20% !important;
+ }}
+@media screen and (max-width:699px) {
+ .column-numbers{
+   column-count: 1;
+   padding-left:33% !important;
+}}
 /* Remove the blue box-shadow when hovering over header items, which is
 set by the skin Minerva */
 nav ul li a:hover {
